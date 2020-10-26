@@ -6,15 +6,24 @@
     <title>To Do</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
-      <h1 id="title">To-Do List</h1>
-      <input type="text" id="inputText" /> <button class="btn">+</button>
-      <div class="todos"></div>
+    <div id="container">
+      <form id="form">
+        <h1>todo</h1>
+        <input id="input" type="input" />
+        <br />
+        <button type="button" id="button" onsubmit="return false">Enter</button>
+      </form>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <div id="listContainer">
+      <ul id="list"></ul>
+    </div>
+    <script src="jquery.js"></script>
     <script src="todo.js"></script>
   </body>
 </html>
